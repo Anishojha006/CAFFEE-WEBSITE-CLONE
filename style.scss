@@ -210,12 +210,13 @@ body {
     }
     section.part2 {
       padding: 0.4rem;
+      padding-bottom: 2rem;
       border-radius: 0.625rem;
       border: 2px solid rgba(40, 44, 21, 0.15);
 
       p {
-        font-family: Caffeefont;
-        font-size: 1.2rem;
+        font-family: sans-serif;
+        font-size: 1rem;
         text-align: center;
         width: 68%;
         margin-right: auto;
@@ -229,6 +230,22 @@ body {
         padding-top: 0.6rem;
         color: #ab8051;
       }
+    }
+    section.part3{
+      padding: 0.4rem;
+      padding-bottom: 2rem;
+      border-radius: 0.625rem;
+      border: 2px solid rgba(40, 44, 21, 0.15);
+      margin-top: 0.4rem;
+      p{
+        @include flex(row,1rem);
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid rgba(40, 44, 21, 0.15);
+        
+      }
+      
     }
   }
 }
