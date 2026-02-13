@@ -18,6 +18,10 @@ body {
   font-family: imbue-bold;
   src: url(Imbue-TextThin.otf);
 }
+@font-face {
+  font-family: font;
+  src: url(Imbue-Bold.otf);
+}
 body {
   padding: 0.4rem;
   background-color: #faf7ed;
@@ -189,8 +193,7 @@ body main section.part1 .location .livelocation .map-card .address img {
   width: 1rem;
 }
 body main section.part2 {
-  padding: 0.4rem;
-  padding-bottom: 2rem;
+  padding: 0.4rem 0.4rem 2rem;
   border-radius: 0.625rem;
   border: 2px solid rgba(40, 44, 21, 0.15);
 }
@@ -238,4 +241,56 @@ body main section.part2 .contact-details p a {
 }
 body main section.part2 .contact-details p a img {
   margin-bottom: -0.3rem;
+}
+body main section.part3 {
+  padding: 0.4rem 0.4rem 2rem;
+  border-radius: 0.625rem;
+  border: 2px solid rgba(40, 44, 21, 0.15);
+  margin-top: 0.6rem;
+}
+body main section.part3 .founders-details {
+  padding: 2rem;
+  padding-top: 2.5rem;
+}
+body main section.part3 .founders-details h1 {
+  font-family: Caffeefont;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 300;
+  color: #282c15;
+}
+body main section.part3 .founders-details p {
+  color: #282c15;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+}
+body main section.part3 .founders-details .founder-imges {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+body main section.part3 .founders-details .founder-imges .founder {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+body main section.part3 .founders-details .founder-imges .founder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+body main section.part3 .founders-details .founder-imges .founder:hover {
+  transform: scale(1.08);
+}
+body main section.part3 .founders-details .founder-imges .founder:nth-of-type(2) {
+  position: absolute;
+  right: 7.5625rem;
+}
+body main section.part3 .founders-details .founder-imges .founder:nth-of-type(1) {
+  z-index: 1;
+  border: 2px solid white;
 }/*# sourceMappingURL=style.css.map */
