@@ -29,8 +29,6 @@ body {
 }
 body main {
   padding: 0.4rem;
-  height: 100%;
-  width: 100%;
   border: 1px solid rgba(40, 44, 21, 0.15);
   border-radius: 1.1875rem;
 }
@@ -157,8 +155,6 @@ body main section.part1 .location .livelocation .map-card {
   color: #282c15;
   overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  /* MAP IMAGE */
-  /* ADDRESS */
 }
 body main section.part1 .location .livelocation .map-card:hover {
   transform: translateY(-6px);
@@ -175,11 +171,17 @@ body main section.part1 .location .livelocation .map-card .card-header {
 body main section.part1 .location .livelocation .map-card .card-header img {
   width: 1.5rem;
 }
+body main section.part1 .location .livelocation .map-card {
+  /* MAP IMAGE */
+}
 body main section.part1 .location .livelocation .map-card .map-image img {
   width: 100%;
   height: 2rem;
   object-fit: cover;
   display: block;
+}
+body main section.part1 .location .livelocation .map-card {
+  /* ADDRESS */
 }
 body main section.part1 .location .livelocation .map-card .address {
   display: flex;
@@ -251,6 +253,10 @@ body main section.part3 {
 body main section.part3 .founders-details {
   padding: 2rem;
   padding-top: 2.5rem;
+  padding: 0.4rem 0.4rem 2rem;
+  border-radius: 0.625rem;
+  border: 2px solid rgba(40, 44, 21, 0.15);
+  margin-top: 0.6rem;
 }
 body main section.part3 .founders-details h1 {
   font-family: Caffeefont;
@@ -263,34 +269,137 @@ body main section.part3 .founders-details p {
   color: #282c15;
   font-size: 1.125rem;
   line-height: 1.875rem;
+  padding: 1.6rem;
 }
-body main section.part3 .founders-details .founder-imges {
+body main section.part3 .founders-details .founders .founder-imges {
   margin-top: 2rem;
-  display: flex;
-  gap: 1.5rem;
+  height: 100%;
+  width: 100%;
   align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  justify-content: space-around;
 }
-body main section.part3 .founders-details .founder-imges .founder {
-  width: 7.5rem;
-  height: 7.5rem;
+body main section.part3 .founders-details .founders .founder-imges .founder {
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
   overflow: hidden;
-  transition: transform 0.3s ease;
+  border: 2px solid white;
+  margin-right: 5rem;
 }
-body main section.part3 .founders-details .founder-imges .founder img {
+body main section.part3 .founders-details .founders .founder-imges .founder img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-body main section.part3 .founders-details .founder-imges .founder:hover {
+body main section.part3 .founders-details .founders .founder-imges .founder {
+  transition: transform 0.3s ease;
+}
+body main section.part3 .founders-details .founders .founder-imges .founder:hover {
   transform: scale(1.08);
 }
-body main section.part3 .founders-details .founder-imges .founder:nth-of-type(2) {
+body main section.part3 .founders-details .founders .founder-imges .founder:nth-of-type(2) {
   position: absolute;
-  right: 7.5625rem;
+  right: 2.9625rem;
 }
-body main section.part3 .founders-details .founder-imges .founder:nth-of-type(1) {
+body main section.part3 .founders-details .founders .founder-imges .founder:nth-of-type(1) {
   z-index: 1;
-  border: 2px solid white;
+}
+body main section.part3 .founders-details .founders .founders-text {
+  margin-top: 1rem;
+  text-align: center;
+  line-height: 1.3125rem;
+}
+body main section.part3 .reservation-section {
+  padding: 0.4rem 0.4rem 2rem;
+  border-radius: 0.625rem;
+  border: 2px solid rgba(40, 44, 21, 0.15);
+  margin-top: 0.6rem;
+}
+body main section.part3 .reservation-section button {
+  background-color: #282c15;
+  padding: 0.875rem;
+  margin-top: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  border-radius: 0.75rem;
+  padding: 1.2rem;
+  letter-spacing: 0.0625rem;
+}
+body main section.part4 {
+  padding: 0.4rem 0.4rem 2rem;
+  border-radius: 0.625rem;
+  border: 2px solid rgba(40, 44, 21, 0.15);
+  margin-top: 0.6rem;
+}
+body main section.part4 .photo {
+  padding: 0.4rem 0.4rem 2rem;
+  border-radius: 0.625rem;
+  border: 2px solid rgba(40, 44, 21, 0.15);
+  margin-top: 0.6rem;
+  padding: 1rem;
+}
+body main section.part4 .photo h2 {
+  text-align: center;
+  padding: 3rem;
+  font-family: Caffeefont;
+  color: #282c15;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+body main section.part4 .photo .cardssection {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+body main section.part4 .photo .cardssection .card img {
+  width: 9rem;
+  height: 9rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.625rem;
+}
+body main section.part4 .photo .cardssection .card p {
+  padding: 1rem 0 1rem 1rem;
+}
+body main section.part4 .photo .cardssection .card h3 {
+  font-weight: 400;
+}
+body main section.part4 .blog-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid rgba(40, 44, 21, 0.15);
+  border-radius: 0.5rem;
+  background: transparent;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 3rem;
+}
+body main section.part4 .blog-btn__text {
+  font-size: 0.75rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  color: rgb(171, 128, 81);
+  font-weight: 500;
+}
+body main section.part4 .blog-btn__dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: rgb(171, 128, 81);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+body main section.part4 .blog-btn:hover {
+  background: rgba(171, 128, 81, 0.08);
+  border-color: rgb(171, 128, 81);
+}
+body main section.part4 .blog-btn:hover .blog-btn__dot {
+  transform: translateX(4px);
 }/*# sourceMappingURL=style.css.map */
