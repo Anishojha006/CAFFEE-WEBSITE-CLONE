@@ -83,35 +83,40 @@ body main header .booking {
   padding: 2.75rem;
   width: 100%;
 }
-body main header .booking .top {
+body main header .booking .topbottom {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+body main header .booking .topbottom .top {
   display: flex;
   flex-direction: row;
   gap: 0.6rem;
   height: 4.375rem;
 }
-body main header .booking .top h1 {
+body main header .booking .topbottom .top h1 {
   margin-left: 0.25rem;
   font-family: imbue-bold;
   font-size: 4.75rem;
 }
-body main header .booking .top img {
+body main header .booking .topbottom .top img {
   object-position: center;
   object-fit: cover;
   border-radius: 0.8125rem;
   margin-top: 1rem;
 }
-body main header .booking .bottom {
+body main header .booking .topbottom .bottom {
   display: flex;
   flex-direction: row;
   gap: 0.6rem;
   height: 4.375rem;
 }
-body main header .booking .bottom h1 {
+body main header .booking .topbottom .bottom h1 {
   margin-left: 0.25rem;
   font-family: imbue-bold;
   font-size: 4.75rem;
 }
-body main header .booking .bottom img {
+body main header .booking .topbottom .bottom img {
   object-position: center;
   object-fit: cover;
   border-radius: 0.8125rem;

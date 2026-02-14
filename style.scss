@@ -88,43 +88,47 @@ body {
       .booking {
         padding: 2.75rem;
         width: 100%;
+        .topbottom {
+          flex-direction: column;
+          align-items: center;
+          display: flex;
+          .top {
+            @include flex(row, 0.6rem);
+            height: 4.375rem;
 
-        .top {
-          @include flex(row, 0.6rem);
-          height: 4.375rem;
+            h1 {
+              margin-left: 0.25rem;
+              font-family: imbue-bold;
+              font-size: 4.75rem;
+            }
 
-          h1 {
-            margin-left: 0.25rem;
-            font-family: imbue-bold;
-            font-size: 4.75rem;
+            img {
+              object-position: center;
+              object-fit: cover;
+              border-radius: 0.8125rem;
+              margin-top: 1rem;
+            }
+          }
+          .bottom {
+            @include flex(row, 0.6rem);
+            height: 4.375rem;
+
+            h1 {
+              margin-left: 0.25rem;
+              font-family: imbue-bold;
+              font-size: 4.75rem;
+            }
+
+            img {
+              object-position: center;
+              object-fit: cover;
+              border-radius: 0.8125rem;
+              border-radius: 0.8125rem;
+              margin-top: 1.3125rem;
+            }
           }
 
-          img {
-            object-position: center;
-            object-fit: cover;
-            border-radius: 0.8125rem;
-            margin-top: 1rem;
-          }
         }
-        .bottom {
-          @include flex(row, 0.6rem);
-          height: 4.375rem;
-
-          h1 {
-            margin-left: 0.25rem;
-            font-family: imbue-bold;
-            font-size: 4.75rem;
-          }
-
-          img {
-            object-position: center;
-            object-fit: cover;
-            border-radius: 0.8125rem;
-            border-radius: 0.8125rem;
-            margin-top: 1.3125rem;
-          }
-        }
-
         button {
           background-color: #282c15;
           padding: 0.875rem;
@@ -493,61 +497,62 @@ body {
       }
     }
     .framer-o630m {
-  width: 100%;
-  border: 1px solid rgba(40, 44, 21, 0.15);
-  border-radius: 18px;
-  padding: 32px 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  box-sizing: border-box; /* Ensures padding doesn't break width */
-}
+      width: 100%;
+      border: 1px solid rgba(40, 44, 21, 0.15);
+      border-radius: 18px;
+      padding: 32px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      box-sizing: border-box; /* Ensures padding doesn't break width */
+    }
 
-.framer-1g04b1f {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-}
+    .framer-1g04b1f {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
 
-.copyright {
-  color: rgb(171, 128, 81);
-  font-size: 14px;
-  margin: 0;
-  text-align: center;
-}
+    .copyright {
+      color: rgb(171, 128, 81);
+      font-size: 14px;
+      margin: 0;
+      text-align: center;
+    }
 
-.framer-s7wggs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-}
+    .framer-s7wggs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
 
-.framer-s7wggs a {
-  font-size: 14px;
-  text-decoration: none;
-  color: rgb(171, 128, 81);
-}
+    .framer-s7wggs a {
+      font-size: 14px;
+      text-decoration: none;
+      color: rgb(171, 128, 81);
+    }
 
-.framer-divider {
-  width: 1px;
-  height: 14px;
-  background-color: rgb(171, 128, 81);
-}
+    .framer-divider {
+      width: 1px;
+      height: 14px;
+      background-color: rgb(171, 128, 81);
+    }
 
-.framer-1tstrdc a {
-  font-size: 14px;
-  text-decoration: none;
-  color: rgb(40, 44, 21);
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
+    .framer-1tstrdc a {
+      font-size: 14px;
+      text-decoration: none;
+      color: rgb(40, 44, 21);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
 
-.framer-1tstrdc span {
-  color: rgb(171, 128, 81);
-}
+    .framer-1tstrdc span {
+      color: rgb(171, 128, 81);
+    }
   }
+  
 }
