@@ -61,6 +61,7 @@ body {
         padding: 1rem;
         border: 2px solid rgba(40, 44, 21, 0.15);
         border-radius: 0.625rem;
+        position:fixed;
         @include flex(row, 1rem);
 
         .hamburger {
