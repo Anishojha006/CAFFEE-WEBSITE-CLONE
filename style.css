@@ -10,6 +10,21 @@ body {
   height: 100%;
 }
 
+.btn {
+  width: fit-content;
+  padding: 5vw;
+  display: block;
+  margin: 0 auto;
+  background-color: #282C15;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.margin-top {
+  margin-top: 3.5rem;
+}
+
 @font-face {
   font-family: Caffeefont;
   src: url(font2.woff2);
@@ -402,4 +417,112 @@ body main section.part4 .blog-btn:hover {
 }
 body main section.part4 .blog-btn:hover .blog-btn__dot {
   transform: translateX(4px);
+}
+body main section.part5 {
+  padding: 0.4rem 0.4rem 2rem;
+  border-radius: 0.625rem;
+  border: 2px solid rgba(40, 44, 21, 0.15);
+  margin-top: 0.6rem;
+}
+body main section.part5 .form {
+  height: min-content;
+  min-height: 600px;
+  padding: 80px 18px;
+}
+body main section.part5 .form h1 {
+  text-align: center;
+  color: #282c15;
+  font-size: 3rem;
+  font-weight: 300;
+  transform: scaleY(1.3);
+}
+body main section.part5 .form .all-entery {
+  padding: 1rem;
+}
+body main section.part5 .form .all-entery .entery {
+  border-bottom: 1px solid rgba(40, 44, 21, 0.1490196078);
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+body main section.part5 .form .all-entery .entery .detail {
+  border-bottom: 2px solid rgba(40, 44, 21, 0.1490196078);
+  padding: 0.2rem;
+  width: 5rem;
+}
+body main section.part5 .form .all-entery .entery .detail p {
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+body main section.part5 .form .all-entery .entery .detail label {
+  padding-bottom: 1rem;
+  display: inline-block;
+  width: 5.625rem;
+  text-transform: uppercase;
+}
+body main section.part5 .form .all-entery .entery select {
+  background: transparent;
+  border: none;
+  color: #757575;
+  width: 100%;
+  padding-left: 8px;
+  padding-bottom: 18px;
+}
+body main section.part5 .form .all-entery .entery input {
+  border: none;
+  font-size: 0.875rem;
+  padding-bottom: 1rem;
+  background-color: transparent;
+  width: 100%;
+}
+body main .framer-o630m {
+  width: 100%;
+  border: 1px solid rgba(40, 44, 21, 0.15);
+  border-radius: 18px;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+body main .framer-1g04b1f {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+body main .copyright {
+  color: rgb(171, 128, 81);
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+}
+body main .framer-s7wggs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+body main .framer-s7wggs a {
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(171, 128, 81);
+}
+body main .framer-divider {
+  width: 1px;
+  height: 14px;
+  background-color: rgb(171, 128, 81);
+}
+body main .framer-1tstrdc a {
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(40, 44, 21);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+body main .framer-1tstrdc span {
+  color: rgb(171, 128, 81);
 }/*# sourceMappingURL=style.css.map */
