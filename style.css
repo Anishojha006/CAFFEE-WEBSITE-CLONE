@@ -41,6 +41,9 @@ body {
   padding: 0.4rem;
   background-color: #faf7ed;
   font-family: Caffeefont;
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
 }
 body main {
   padding: 0.4rem;
@@ -58,7 +61,7 @@ body main header nav {
   border: 2px solid rgba(40, 44, 21, 0.15);
   border-radius: 0.625rem;
   position: fixed;
-  background-color: #FAF7ED;
+  background-color: #faf7ed;
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -532,4 +535,115 @@ body main .framer-1tstrdc a {
 }
 body main .framer-1tstrdc span {
   color: rgb(171, 128, 81);
+}
+body main.secondmain {
+  display: none;
+  border: none;
+  padding: 0;
+}
+body main.secondmain section {
+  height: 100vh;
+}
+body main.secondmain section .location {
+  border-radius: 0.9875rem;
+  overflow: hidden;
+  height: 100%;
+  background-image: url(https://framerusercontent.com/images/P6WVdH0z7ofqw52nBmn5Pfb2EE.jpg?scale-down-to=2048&width=1824&height=2736);
+  background-position: center;
+  background-size: cover;
+}
+body main.secondmain section .location .dayandtime {
+  margin: 1rem;
+  border: 0.1px solid white;
+  padding: 0.6rem;
+  border-radius: 0.625rem;
+}
+body main.secondmain section .location .dayandtime p {
+  text-align: center;
+  color: rgb(255, 244, 244);
+}
+body main.secondmain section .location .dayandtime p img {
+  height: 1rem;
+  padding-top: 3px;
+  padding-left: 0.9375rem;
+}
+body main.secondmain section .location .livelocation {
+  padding-top: 18vh;
+  padding-left: 34vw;
+}
+body main.secondmain section .location .livelocation .map-card {
+  display: block;
+  width: 13rem;
+  background: rgb(250, 247, 237);
+  border-radius: 0.625rem;
+  text-decoration: none;
+  color: #282c15;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+body main.secondmain section .location .livelocation .map-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+body main.secondmain section .location .livelocation .map-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.875rem;
+  border-bottom: 1px solid rgba(40, 44, 21, 0.15);
+  font-size: 0.875rem;
+}
+body main.secondmain section .location .livelocation .map-card .card-header img {
+  width: 1.5rem;
+}
+body main.secondmain section .location .livelocation .map-card {
+  /* MAP IMAGE */
+}
+body main.secondmain section .location .livelocation .map-card .map-image img {
+  width: 100%;
+  height: 2rem;
+  object-fit: cover;
+  display: block;
+}
+body main.secondmain section .location .livelocation .map-card {
+  /* ADDRESS */
+}
+body main.secondmain section .location .livelocation .map-card .address {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem;
+  font-size: 0.875rem;
+  color: rgb(171, 128, 81);
+}
+body main.secondmain section .location .livelocation .map-card .address img {
+  width: 1rem;
+}
+
+@media (min-width: 900px) {
+  body main {
+    width: 50vw;
+  }
+  body main header nav {
+    width: 46%;
+    gap: 12rem;
+  }
+  body main header .booking .topbottom {
+    margin-top: 4rem;
+  }
+  body main section.part1 {
+    display: none;
+  }
+  body main.secondmain {
+    display: block;
+    height: 100%;
+  }
+  body main.secondmain section .location {
+    position: fixed;
+    width: 49%;
+    height: 98vh;
+  }
+  body main.secondmain section .location .livelocation {
+    padding-top: 68vh;
+  }
 }/*# sourceMappingURL=style.css.map */

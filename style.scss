@@ -45,6 +45,7 @@ body {
   padding: 0.4rem;
   background-color: #faf7ed;
   font-family: Caffeefont;
+  @include flex(row, 00.6rem);
 
   main {
     padding: 0.4rem;
@@ -61,8 +62,8 @@ body {
         padding: 1rem;
         border: 2px solid rgba(40, 44, 21, 0.15);
         border-radius: 0.625rem;
-        position:fixed;
-        background-color: #FAF7ED;
+        position: fixed;
+        background-color: #faf7ed;
         @include flex(row, 1rem);
 
         .hamburger {
@@ -129,7 +130,6 @@ body {
               margin-top: 1.3125rem;
             }
           }
-
         }
         button {
           background-color: #282c15;
@@ -556,5 +556,131 @@ body {
       color: rgb(171, 128, 81);
     }
   }
-  
+  main.secondmain {
+    display: none;
+    border: none;
+    padding: 0;
+    section {
+      height: 100vh;
+
+      .location {
+        border-radius: 0.9875rem;
+        overflow: hidden;
+        height: 100%;
+        background-image: url(https://framerusercontent.com/images/P6WVdH0z7ofqw52nBmn5Pfb2EE.jpg?scale-down-to=2048&width=1824&height=2736);
+        background-position: center;
+        background-size: cover;
+        .dayandtime {
+          margin: 1rem;
+          border: 0.1px solid white;
+          padding: 0.6rem;
+          border-radius: 0.625rem;
+          p {
+            text-align: center;
+            color: rgb(255, 244, 244);
+            img {
+              height: 1rem;
+              padding-top: 3px;
+              padding-left: 0.9375rem;
+            }
+          }
+        }
+        .livelocation {
+          padding-top: 18vh;
+          padding-left: 34vw;
+
+          .map-card {
+            display: block;
+            width: 13rem;
+            background: rgb(250, 247, 237);
+            border-radius: 0.625rem; // 10px
+            text-decoration: none;
+            color: #282c15;
+            overflow: hidden;
+            transition:
+              transform 0.25s ease,
+              box-shadow 0.25s ease;
+
+            &:hover {
+              transform: translateY(-6px);
+              box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            }
+
+            .card-header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 0.875rem; // 14px
+              border-bottom: 1px solid rgba(40, 44, 21, 0.15);
+              font-size: 0.875rem;
+
+              img {
+                width: 1.5rem;
+              }
+            }
+
+            /* MAP IMAGE */
+            .map-image {
+              img {
+                width: 100%;
+                height: 2rem;
+                object-fit: cover;
+                display: block;
+              }
+            }
+
+            /* ADDRESS */
+            .address {
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              padding: 0.875rem;
+              font-size: 0.875rem;
+              color: rgb(171, 128, 81);
+
+              img {
+                width: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 900px) {
+  body {
+    main {
+      width: 50vw;
+      header {
+        nav {
+          width: 46%;
+          gap: 12rem;
+        }
+        .booking {
+          .topbottom {
+            margin-top: 4rem;
+          }
+        }
+      }
+      section.part1 {
+        display: none;
+      }
+    }
+    main.secondmain {
+      display: block;
+      height: 100%;
+
+      section {
+        .location {
+          position: fixed;
+          width: 49%;
+          height: 98vh;
+          .livelocation {
+            padding-top: 68vh;
+          }
+        }
+      }
+    }
+  }
 }
