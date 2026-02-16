@@ -631,6 +631,18 @@ body main.secondmain section .location .livelocation .map-card .address img {
   body main header .booking .topbottom {
     margin-top: 4rem;
   }
+  body main header .booking .topbottom .top {
+    height: 7.375rem;
+  }
+  body main header .booking .topbottom .top h1 {
+    font-size: 120px;
+  }
+  body main header .booking .topbottom .bottom {
+    height: 7.375rem;
+  }
+  body main header .booking .topbottom .bottom h1 {
+    font-size: 120px;
+  }
   body main section.part1 {
     display: none;
   }
