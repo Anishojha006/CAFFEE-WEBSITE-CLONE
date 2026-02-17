@@ -286,7 +286,7 @@ body main section.part3 .founders-details {
 body main section.part3 .founders-details h1 {
   font-family: Caffeefont;
   text-align: center;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 300;
   color: #282c15;
 }
@@ -297,6 +297,7 @@ body main section.part3 .founders-details p {
   padding: 1.6rem;
 }
 body main section.part3 .founders-details .founders .founder-imges {
+  position: relative;
   margin-top: 2rem;
   height: 100%;
   width: 100%;
@@ -328,7 +329,7 @@ body main section.part3 .founders-details .founders .founder-imges .founder:hove
 }
 body main section.part3 .founders-details .founders .founder-imges .founder:nth-of-type(2) {
   position: absolute;
-  right: 2.9625rem;
+  right: 8%;
 }
 body main section.part3 .founders-details .founders .founder-imges .founder:nth-of-type(1) {
   z-index: 1;
@@ -623,6 +624,7 @@ body main.secondmain section .location .livelocation .map-card .address img {
 @media (min-width: 900px) {
   body main {
     width: 50vw;
+    height: fit-content;
   }
   body main header nav {
     width: 46%;
@@ -645,6 +647,58 @@ body main.secondmain section .location .livelocation .map-card .address img {
   }
   body main section.part1 {
     display: none;
+  }
+  body main section.part2 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    border: none;
+    margin-top: 0.6rem;
+  }
+  body main section.part2 .paras {
+    padding: 0.4rem 0.4rem 2rem;
+    border-radius: 0.625rem;
+    border: 2px solid rgba(40, 44, 21, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: 50%;
+  }
+  body main section.part2 .paras p {
+    color: #282C15;
+  }
+  body main section.part2 .paras p:nth-child(2) {
+    padding: 0;
+    margin-bottom: 0;
+    color: #ab8051;
+  }
+  body main section.part2 .contact-details {
+    padding: 0.4rem 0.4rem 2rem;
+    border-radius: 0.625rem;
+    border: 2px solid rgba(40, 44, 21, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: end;
+    height: 17rem;
+    width: 50%;
+    padding: 0;
+  }
+  body main section.part2 .contact-details .contact:nth-child(1) {
+    border-top: 2px solid rgba(40, 44, 21, 0.15);
+  }
+  body main section.part2 .contact-details .contact:nth-child(3) {
+    border: none;
+  }
+  body main section.part3 .founders-details h1 {
+    padding-top: 3rem;
+  }
+  body main section.part3 .founders-details p {
+    text-align: center;
+  }
+  body main section.part3 .founders-details .founders .founder-imges .founder:nth-of-type(2) {
+    position: absolute;
+    right: 28%;
   }
   body main.secondmain {
     display: block;
