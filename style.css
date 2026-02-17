@@ -82,7 +82,8 @@ body main header nav p {
   color: #ab8051;
   font-size: 0.75rem;
   letter-spacing: 0.0625rem;
-  line-height: 1em; /* or 1rem if you prefer */
+  line-height: 1em;
+  /* or 1rem if you prefer */
 }
 body main header .booking {
   padding: 2.75rem;
@@ -496,7 +497,8 @@ body main .framer-o630m {
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  box-sizing: border-box; /* Ensures padding doesn't break width */
+  box-sizing: border-box;
+  /* Ensures padding doesn't break width */
 }
 body main .framer-1g04b1f {
   display: flex;
@@ -665,7 +667,7 @@ body main.secondmain section .location .livelocation .map-card .address img {
     width: 50%;
   }
   body main section.part2 .paras p {
-    color: #282C15;
+    color: #282c15;
   }
   body main section.part2 .paras p:nth-child(2) {
     padding: 0;
@@ -690,6 +692,9 @@ body main.secondmain section .location .livelocation .map-card .address img {
   body main section.part2 .contact-details .contact:nth-child(3) {
     border: none;
   }
+  body main section.part3 {
+    padding: 0.4rem 0.4rem 0.5rem;
+  }
   body main section.part3 .founders-details h1 {
     padding-top: 3rem;
   }
@@ -699,6 +704,44 @@ body main.secondmain section .location .livelocation .map-card .address img {
   body main section.part3 .founders-details .founders .founder-imges .founder:nth-of-type(2) {
     position: absolute;
     right: 28%;
+  }
+  body main section.part3 .reservation-section {
+    padding: 0.4rem 0.4rem 0.3rem;
+    border-radius: 0.625rem;
+    border: 2px solid rgba(40, 44, 21, 0.15);
+    margin-top: 0.3rem;
+  }
+  body main section.part4 .photo {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    justify-content: center;
+    align-items: center;
+  }
+  body main section.part4 .photo .cardssection {
+    gap: 2rem;
+  }
+  body main section.part4 .photo .cardssection .card .cardImg {
+    background-color: blue;
+    height: 12vw;
+    width: 12vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.625rem;
+    width: 100%;
+  }
+  body main section.part4 .photo .cardssection .card .cardImg img {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  body main section.part4 .photo .cardssection .card p,
+  body main section.part4 .photo .cardssection .card h3 {
+    margin-left: 6.5625rem;
+  }
+  body main section.part5 .form .btn {
+    font-size: 1.3rem;
+    padding: 1rem 4rem;
   }
   body main.secondmain {
     display: block;
