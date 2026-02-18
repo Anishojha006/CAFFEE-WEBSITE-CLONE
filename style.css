@@ -301,12 +301,13 @@ body main section.part3 .founders-details .founders .founder-imges {
   position: relative;
   margin-top: 2rem;
   height: 100%;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
   align-items: center;
   display: flex;
   flex-direction: row;
-  gap: 5rem;
-  justify-content: space-around;
+  gap: 0rem;
 }
 body main section.part3 .founders-details .founders .founder-imges .founder {
   height: 5rem;
@@ -330,7 +331,7 @@ body main section.part3 .founders-details .founders .founder-imges .founder:hove
 }
 body main section.part3 .founders-details .founders .founder-imges .founder:nth-of-type(2) {
   position: absolute;
-  right: 8%;
+  right: -39%;
 }
 body main section.part3 .founders-details .founders .founder-imges .founder:nth-of-type(1) {
   z-index: 1;
@@ -700,10 +701,6 @@ body main.secondmain section .location .livelocation .map-card .address img {
   }
   body main section.part3 .founders-details p {
     text-align: center;
-  }
-  body main section.part3 .founders-details .founders .founder-imges .founder:nth-of-type(2) {
-    position: absolute;
-    right: 28%;
   }
   body main section.part3 .reservation-section {
     padding: 0.4rem 0.4rem 0.3rem;

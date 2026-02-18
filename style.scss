@@ -335,10 +335,12 @@ body {
             position: relative;
             margin-top: 2rem;
             height: 100%;
-            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
             align-items: center;
-            @include flex(row, 5rem);
-            justify-content: space-around;
+            @include flex(row, 0rem);
+            
 
             .founder {
               height: 5rem;
@@ -364,7 +366,7 @@ body {
 
             .founder:nth-of-type(2) {
               position: absolute;
-              right: 8%;
+              right:-39%;
             }
 
             .founder:nth-of-type(1) {
@@ -790,17 +792,6 @@ body {
 
           p {
             text-align: center;
-          }
-
-          .founders {
-            .founder-imges {
-              .founder {
-                &:nth-of-type(2) {
-                  position: absolute;
-                  right: 28%;
-                }
-              }
-            }
           }
         }
 
